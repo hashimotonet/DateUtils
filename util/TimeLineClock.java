@@ -11,7 +11,7 @@ import java.util.Date;
 // This class is under the test phase.
 public class TimeLineClock {
 
-	private final String STANDARD_TIME_FORMAT="YYYY/MM/dd HH:ss";
+	private final String STANDARD_TIME_FORMAT="YYYY/MM/dd HH:mm";
 	private final SimpleDateFormat sdf = new SimpleDateFormat(STANDARD_TIME_FORMAT);
 	
 	public String getFormmatedDateAndTime(Date date) {
