@@ -57,6 +57,13 @@ public class TimeLineClock {
 	
 	/**
 	 * 
+	 * @return Formatted Japanese Date String.
+	 */
+	public static String getCurrentJapaneseDateAndTime(Date date) {
+		return getJapaneseDateAndTime(date);
+	}
+/**
+	 * 
 	 * @TODO Implementation.
 	 * @return Formatted Japanese Date String.
 	 */
