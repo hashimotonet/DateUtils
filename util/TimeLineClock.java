@@ -1,23 +1,26 @@
 package hashimotonet.util;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * @author hashimotonet
- * @version 0.0.8
+ * @version 1.0.0
  */
 
 public class TimeLineClock {
 
 	private final String STANDARD_TIME_FORMAT="YYYY/MM/dd HH:mm";
 	private final SimpleDateFormat sdf = new SimpleDateFormat(STANDARD_TIME_FORMAT);
-		
+	
 	private final String CONVERT_TIME_FORMAT = "YYYY年MM月dd日";
 	private final SimpleDateFormat convFormat = new SimpleDateFormat(CONVERT_TIME_FORMAT);
 	
 	private final static String separater = "-----------------------------";
-
+	
 	/**
 	 * 
 	 * @param date　指定日付
@@ -62,7 +65,8 @@ public class TimeLineClock {
 	public static String getCurrentJapaneseDateAndTime(Date date) {
 		return getJapaneseDateAndTime(date);
 	}
-/**
+	
+	/**
 	 * 
 	 * @TODO Implementation.
 	 * @return Formatted Japanese Date String.
@@ -94,6 +98,8 @@ public class TimeLineClock {
 
 	public static void main(String args[]) {
 		
+		TimeLineClock clock = new TimeLineClock();
+
 		System.out.println(separater);
 		System.out.println(TimeLineClock.getCurrentDateAndTime());
 		System.out.println("Usage : call Class Method shown below.\nTimeLineClock.getCurrentDateAndTime() \nmethod from your source.\n");
